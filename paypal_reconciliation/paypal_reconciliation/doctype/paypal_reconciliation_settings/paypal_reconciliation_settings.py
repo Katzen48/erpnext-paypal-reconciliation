@@ -49,7 +49,7 @@ def new_bank_transaction(bank_account, transaction):
 	withdrawal_amount = 0
 	deposit_amount = 0
 	currency_code = transaction['transaction_info']['transaction_amount']['currency_code']
-	if transaction['transaction_info']['transaction_status'] == 'S':
+	if float(transaction['transaction_info']['transaction_amount']['value']) < 0.00:
 		withdrawal_amount = abs(float(transaction['transaction_info']['transaction_amount']['value']))
 	else:
 		deposit_amount = abs(float(transaction['transaction_info']['transaction_amount']['value']))

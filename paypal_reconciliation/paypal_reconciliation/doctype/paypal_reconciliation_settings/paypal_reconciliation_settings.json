@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "creation": "2022-08-27 22:01:25.723096",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_id",
+  "client_secret"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_secret",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Client Secret",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-08-27 22:10:32.706194",
+ "modified_by": "Administrator",
+ "module": "Paypal Reconciliation",
+ "name": "PayPal Reconciliation Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

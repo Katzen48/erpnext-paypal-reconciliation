@@ -185,3 +185,15 @@ app_license = "MIT"
 # auth_hooks = [
 #	"paypal_reconciliation.auth.validate"
 # ]
+
+fixtures = ["Custom Field"]
+
+scheduler_events = {
+    "hourly": [
+        "paypal_reconciliation.paypal_reconciliation.doctype.paypal_reconciliation_settings.paypal_reconciliation_settings.automatic_synchronization"
+    ]
+}
+
+doctype_js = {
+    "Bank Account": "public/js/bank_account_form.js"
+}
